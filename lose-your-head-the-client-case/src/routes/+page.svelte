@@ -1,8 +1,6 @@
 <script>
-    import HeaderHome from "../lib/components/headerHome.svelte";
-</script>
 
-<!-- <HeaderHome /> -->
+</script>
 
 <main>
     <div class="grid-container">

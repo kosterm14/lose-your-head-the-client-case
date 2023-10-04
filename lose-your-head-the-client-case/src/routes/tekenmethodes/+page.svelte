@@ -55,24 +55,21 @@
         </ul>
     </section>
 </section>
-<!-- omg emona hielp -->
-{#each data.methods as method}
-    <h1>{method.title}</h1>
-{/each}
 
-<!-- <main class="tekenmethodes-main">
+<!-- omg emona hielp -->
+<main class="tekenmethodes-main">
     <article class="methods">
-        {#if methods.length > 0}
-            {#each methods as method, index}
+        {#if data.methods.length > 0}
+            {#each data.methods as method, index}
                 <section class="method-container" data-index={index}>
-                    <a href="/method/{method.slug}" class="link-detail-page">
-                        {#if method.template && method.template.originalAsWebP}
+                    <a href="/tekenmethodes/{method.slug}" class="link-detail-page">
+                        {#if method.template && method.template.url}
                             <img
                                 class={method.categories[0].title.replaceAll(
                                     " ",
                                     "-"
                                 )}
-                                src={method.template.originalAsWebP}
+                                src={method.template.url}
                                 alt={"Voorbeeld van " + method.title}
                                 loading="lazy"
                             />
@@ -95,7 +92,7 @@
             {/each}
         {/if}
     </article>
-</main> -->
+</main>
 
 <Footer />
 

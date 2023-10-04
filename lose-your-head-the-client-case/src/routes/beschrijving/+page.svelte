@@ -1,51 +1,86 @@
 <script>
-    import Header from "../../lib/components/header.svelte";
+    // import Header from "../../lib/components/headerDetail.svelte";
     import Footer from "../../lib/components/footer.svelte";
+
+    export let data;
 </script>
 
-<Header />
-
-<body>
-    <main class="tiproom">
-        <h1>Tekentips</h1>
+<!-- <Header /> -->
+<body class="page">
+    <header>
         <section>
-            <article class="tiproom-tips">
-                <ul class="tiproom-message" />
-            </article>
-            <form class="tiproom-form">
-                <h2>Geef een tip</h2>
+            <a href="/">
+                <img class="logo" src="/assets/vtHBO-v1.0-Logo_1.svg" alt="" />
+            </a>
+        </section>
 
-                <label for="name">Naam</label>
-                <textarea
-                    required
-                    class="name"
-                    type="text"
-                    autocomplete="additional-name"
-                    placeholder="Vul hier je naam in..."
-                    name="naam"
-                    id="naam"
-                />
+        <section class="navheader">
+            <nav>
+                <ul>
+                    <a href="/over">
+                        <li>Over</li>
+                    </a>
+                    <li>Blog</li>
+                    <li>
+                        <img src="/assets/account.svg" alt="" />
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
 
-                <label for="tip">Tip</label>
-                <textarea
-                    required
-                    class="tip"
-                    type="text"
-                    autocomplete="off"
-                    placeholder="Vul hier je tip in..."
-                    name="tip"
-                    id="tip"
-                />
+    <section>
+        <a href="/tekenmethodes">
+            <p class="line">
+                <img class="arrows-line" src="/assets/arrows.svg" alt="" />
+                Overzicht <strong>tekenmethodes</strong>
+            </p>
+        </a>
+    </section>
 
-                <button class="tiproom-form-button" type="submit">
-                    <img src="/assets/Send-button-VT.svg" />
-                </button>
-            </form>
+    <main class="detail-main">
+        <section class="navmain">
+            <section>
+                <h1 class="h1-detail">
+                    {data.method?.title}
+                </h1>
+            </section>
+
+            <nav>
+                <ul>
+                    <li>
+                        <h2 class="bold">Beschrijving</h2>
+                    </li>
+                    <a href="/method/{data.method?.slug}/stappenplan">
+                        <li>
+                            <h2 class="h2-detail">Stappenplan</h2>
+                        </li>
+                    </a>
+                    <a href="/method/{data.method?.slug}/voorbeelden">
+                        <li>
+                            <h2 class="h2-detail">Voorbeelden</h2>
+                        </li>
+                    </a>
+                    <a
+                        href="/method/{data.method?.slug}/form?id={data.method
+                            ?.id}"
+                    >
+                        <li>
+                            <h2 class="h2-detail">Feedback</h2>
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="flex-b">
+            <img class="template-url" src={data.method?.template?.url} alt="" />
+
+            <h3 class="text">
+                {data.method?.description.html}
+            </h3>
         </section>
     </main>
-
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/scripts/tipruimte.js"></script>
 </body>
 
 <Footer />
