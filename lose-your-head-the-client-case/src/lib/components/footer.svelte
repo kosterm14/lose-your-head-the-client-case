@@ -5,9 +5,15 @@
 
     <section class="footer-col-1">
         <ul>
-            <li class="footer-bold">Over</li>
-            <li class="footer-bold">Blog</li>
-            <li class="footer-bold">Tekenmethodes</li>
+            <a href="/over">
+                <li class="footer-bold">Over</li>
+            </a>
+            <a href="/blog">
+                <li class="footer-bold">Blog</li>
+            </a>
+            <a href="/tekenmethodes">
+                <li class="footer-bold">Tekenmethodes</li>
+            </a>
         </ul>
     </section>
 
