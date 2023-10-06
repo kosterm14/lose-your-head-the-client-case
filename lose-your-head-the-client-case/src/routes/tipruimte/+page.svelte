@@ -1,30 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+<script>
+    import Header from "../../lib/components/header.svelte";
+    import Footer from "../../lib/components/footer.svelte";
+</script>
 
-<head>
-	<meta charset="utf-8" />
-	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-	<meta name="viewport" content="width=device-width" />
-	%sveltekit.head%
+<Header />
 
-	<link rel="stylesheet" href="https://use.typekit.net/brx3lyu.css" />
-	<!-- rigid square font -->
-	<link rel="stylesheet" href="https://use.typekit.net/kdb0mcl.css" />
-	<!-- yrsa font -->
-</head>
+<body>
+    <main class="tiproom">
+        <h1>Tekentips</h1>
+        <section>
+            <article class="tiproom-tips">
+                <ul class="tiproom-message" />
+            </article>
+            <form class="tiproom-form">
+                <h2>Geef een tip</h2>
 
-<body data-sveltekit-preload-data="hover">
-	<div style="display: contents">%sveltekit.body%</div>
+                <label for="name">Naam</label>
+                <textarea
+                    required
+                    class="name"
+                    type="text"
+                    autocomplete="additional-name"
+                    placeholder="Vul hier je naam in..."
+                    name="naam"
+                    id="naam"
+                />
+
+                <label for="tip">Tip</label>
+                <textarea
+                    required
+                    class="tip"
+                    type="text"
+                    autocomplete="off"
+                    placeholder="Vul hier je tip in..."
+                    name="tip"
+                    id="tip"
+                />
+
+                <button class="tiproom-form-button" type="submit">
+                    <img src="/assets/Send-button-VT.svg" />
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/scripts/tipruimte.js"></script>
 </body>
 
-</html>
+<Footer />
 
 <style>
-	body {
-		margin: 0;
-		padding: 0;
-	}
-	
     .page {
         margin: 0;
         padding: 0;
@@ -690,10 +716,6 @@
         color: var(--vtWhite);
     }
 
-    p a {
-        color: var(--vtSec-DarkBlue);
-    }
-
     .a {
         color: var(--vtDarkBlue);
     }
@@ -770,8 +792,6 @@
 
     .h1-detail {
         padding-left: 6.7rem;
-        max-width: 30rem;
-        max-height: 6rem;
     }
 
     .h2-detail,
@@ -1947,8 +1967,3 @@
         font-family: var(--vtPrimaryFont);
     }
 </style>
-
-
-<script>
-
-</script>
