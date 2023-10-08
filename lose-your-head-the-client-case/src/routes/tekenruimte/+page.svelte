@@ -31,9 +31,13 @@
             if (!isPainting) {
                 return;
             }
+
+            const x = e.clientX - canvas.getBoundingClientRect().left;
+            const y = e.clientY - canvas.getBoundingClientRect().top;
+
             ctx.lineWidth = lineWidth;
             ctx.lineCap = "round";
-            ctx.lineTo(e.clientX - canvasOffsetX, e.clientY);
+            ctx.lineTo(x, y);
             ctx.stroke();
         };
         canvas.addEventListener("mousedown", (e) => {
@@ -48,6 +52,8 @@
         });
         canvas.addEventListener("mousemove", draw);
     });
+
+    console.log();
 </script>
 
 <Header />
