@@ -2,29 +2,29 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8" />
-	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-	<meta name="viewport" content="width=device-width" />
-	%sveltekit.head%
+    <meta charset="utf-8" />
+    <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    %sveltekit.head%
 
-	<link rel="stylesheet" href="https://use.typekit.net/brx3lyu.css" />
-	<!-- rigid square font -->
-	<link rel="stylesheet" href="https://use.typekit.net/kdb0mcl.css" />
-	<!-- yrsa font -->
+    <link rel="stylesheet" href="https://use.typekit.net/brx3lyu.css" />
+    <!-- rigid square font -->
+    <link rel="stylesheet" href="https://use.typekit.net/kdb0mcl.css" />
+    <!-- yrsa font -->
 </head>
 
 <body data-sveltekit-preload-data="hover">
-	<div style="display: contents">%sveltekit.body%</div>
+    <div style="display: contents">%sveltekit.body%</div>
 </body>
 
 </html>
 
 <style>
-	body {
-		margin: 0;
-		padding: 0;
-	}
-	
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
     .page {
         margin: 0;
         padding: 0;
@@ -630,14 +630,12 @@
     .red4-8 {
         width: 300px;
         height: 275px;
-        clip-path: polygon(
-            25% 0%,
-            75% 0%,
-            100% 50%,
-            75% 100%,
-            25% 100%,
-            0% 50%
-        );
+        clip-path: polygon(25% 0%,
+                75% 0%,
+                100% 50%,
+                75% 100%,
+                25% 100%,
+                0% 50%);
         transform: rotate(90deg);
     }
 
@@ -665,14 +663,12 @@
     .white4-8 {
         width: calc(285px);
         height: calc(261.25px);
-        clip-path: polygon(
-            25% 0%,
-            75% 0%,
-            100% 50%,
-            75% 100%,
-            25% 100%,
-            0% 50%
-        );
+        clip-path: polygon(25% 0%,
+                75% 0%,
+                100% 50%,
+                75% 100%,
+                25% 100%,
+                0% 50%);
     }
 
     em {
@@ -853,14 +849,12 @@
     .carousel-button-right {
         width: 72px;
         height: 66px;
-        clip-path: polygon(
-            25% 0%,
-            75% 0%,
-            100% 50%,
-            75% 100%,
-            25% 100%,
-            0% 50%
-        );
+        clip-path: polygon(25% 0%,
+                75% 0%,
+                100% 50%,
+                75% 100%,
+                25% 100%,
+                0% 50%);
         transform: rotate(90deg);
         border: none;
         background: var(--vtYellow);
@@ -1088,10 +1082,10 @@
         margin-left: 8rem;
     }
 
-    .icon {
+    /* .icon {
         width: 6.5%;
         height: 94.5%;
-    }
+    } */
 
     .columntag {
         display: flex;
@@ -1377,7 +1371,7 @@
         height: auto;
     }
 
-    #touch:checked + .slide {
+    #touch:checked+.slide {
         height: auto;
     }
 
@@ -1866,7 +1860,7 @@
 
     .buttondeel {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         flex-direction: column;
         align-items: center;
     }
@@ -1896,29 +1890,25 @@
 
     .buttondeel {
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
         min-width: 2.6rem;
         max-width: 2.6rem;
         height: 3rem;
         margin-top: 1.2rem;
         margin-right: 1.2rem;
         margin-left: -1rem;
-        -webkit-clip-path: polygon(
-            50% 0%,
-            100% 25%,
-            100% 75%,
-            50% 100%,
-            0% 75%,
-            0% 25%
-        );
-        clip-path: polygon(
-            50% 0%,
-            100% 25%,
-            100% 75%,
-            50% 100%,
-            0% 75%,
-            0% 25%
-        );
+        -webkit-clip-path: polygon(50% 0%,
+                100% 25%,
+                100% 75%,
+                50% 100%,
+                0% 75%,
+                0% 25%);
+        clip-path: polygon(50% 0%,
+                100% 25%,
+                100% 75%,
+                50% 100%,
+                0% 75%,
+                0% 25%);
         background-color: var(--vtGrey-80);
     }
 
@@ -1950,5 +1940,5 @@
 
 
 <script>
-
+    
 </script>

@@ -1,6 +1,6 @@
 <script>
     export let data;
-    console.log(data);
+    // console.log(data);
 </script>
 
 <main>
@@ -8,6 +8,7 @@
         <!-- {#each data.methods as method}
             {method?.title}
         {/each} -->
+
         werkt nog niet :(
     </h1>
 </main>
