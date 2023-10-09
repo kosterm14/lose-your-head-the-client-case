@@ -108,10 +108,6 @@
     width: 100%;
   }
 
-  #linewidth input {
-    width: 100%;
-  }
-
   #toolbar button {
     background-color: #1565c0;
     border: none;
