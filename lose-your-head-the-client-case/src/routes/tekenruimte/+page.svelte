@@ -83,10 +83,13 @@
         margin: auto 0;
     }
     .container {
-        height: 100%;
-        display: flex;
+      font-family: var(--vtPrimaryFont);  
+      height: 100%;
+      display: flex;
     }
     #toolbar {
+        /* font-family: var(--vtPrimaryFont); */
+        font-weight: 800;
         display: flex;
         flex-direction: column;
         padding: 0.5em;
@@ -94,15 +97,25 @@
         background-color: #feb51e;
         border-bottom-right-radius: 25px;
         border-top-right-radius: 25px;
+        gap: 0.3em;
     }
     #toolbar input {
         width: 100%;
+        border-radius: 4px;
     }
-    #linewidth input {
-        width: 100%;
+
+    #stroke{
+        border: none;
+        background: none;
+        border-radius: 4px;
+    }
+
+    #lineWidth{
+        border: none;
+        border-radius: 4px;
     }
     #toolbar button {
-        background-color: #1565c0;
+        background-color: #090940;
         border: none;
         border-radius: 4px;
         color: white;
@@ -110,9 +123,14 @@
         margin-top: 0.5em;
         width: 100%;
     }
-    #stroke {
-        padding: 0;
-        border: none;
-        background: none;
+
+    @media screen and (max-width: 900px) {
+      #toolbar{
+        width: 50%;
+      }
+
     }
+
+
+
 </style>
