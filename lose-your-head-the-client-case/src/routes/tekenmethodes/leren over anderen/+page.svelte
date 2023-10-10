@@ -1,6 +1,6 @@
 <script>
-    import Header from "../../lib/components/header.svelte";
-    import Footer from "../../lib/components/footer.svelte";
+    import Header from "../../../lib/components/header.svelte";
+    import Footer from "../../../lib/components/footer.svelte";
 
     export let data;
 </script>
@@ -48,7 +48,7 @@
         <ul class="categorie-names">
             <li><a href="/tekenmethodes/onderzoeken en begrijpen#methods">Onderzoeken en begrijpen</a></li>
             <li><a href="/tekenmethodes/organiseren en plannen#methods">Organiseren en plannen</a></li>
-            <li><a href="/tekenmethodes/leren over anderen#methods">Leren over anderen</a></li>
+            <li><a href="/tekenmethodes/#methods">Leren over anderen</a></li>
             <li><a href="/tekenmethodes/leren over jezelf#methods">Leren over jezelf</a></li>
             <li><a href="/tekenmethodes/communiceren en presenteren#methods">Communiceren en presenteren</a></li>
             <li><a href="/tekenmethodes/creatief denken#methods">Creatief denken</a></li>
