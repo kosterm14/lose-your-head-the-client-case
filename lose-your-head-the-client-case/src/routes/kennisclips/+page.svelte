@@ -1,112 +1,108 @@
-   
-   
-   
-   <div class="hexagon-kennisclip">
+<main>
+  <header>
+    <div class="hexagon-kennisclip">
+      <section class="hexagon-1">
+        <section class="inside-1" />
+      </section>
 
-        <section class="hexagon-1">
-            <section class="inside-1" />
-        </section>
+      <section class="yellow2-2">
+        <section class="white2-2" />
+      </section>
 
-       
+      <section class="yellow2-3">
+        <section class="white2-3" />
+      </section>
 
-        <section class="yellow2-2">
-            <section class="white2-2" />
-        </section>
+      <section class="h3-yellow2-3" />
 
-       
+      <section class="yellow2-4">
+        <section class="white2-4" />
+      </section>
 
-        <section class="yellow2-3">
-            <section class="white2-3" />
-        </section>
+      <section class="h3-yellow2-4" />
 
-        <section class="h3-yellow2-3">
-           
-        </section>
+      <section class="yellow2-5">
+        <section class="white2-5" />
+      </section>
 
-        <section class="yellow2-4">
-            <section class="white2-4" />
-        </section>
+      <section class="h3-yellow2-5" />
 
-        <section class="h3-yellow2-4">
-           
-        </section>
+      <section class="yellow2-6">
+        <section class="white2-6" />
+      </section>
 
-        <section class="yellow2-5">
-            <section class="white2-5" />
-        </section>
-
-        <section class="h3-yellow2-5">
-         
-        </section>
-
-        <section class="yellow2-6">
-            <section class="white2-6" />
-        </section>
-
-        <section class="h3-yellow2-6">
-         
-        </section>
+      <section class="h3-yellow2-6" />
     </div>
+  </header>
 
-    <style>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/yr-rRMElLFg?si=CkdyjnxpUFMqM7se"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+  />
+</main>
 
-         .hexagon-kennisclip {
-        display: grid;
-        grid-template-columns: auto;
-        margin-top: 15%;
-        justify-content: center;
-    }
+<style>
+  .hexagon-kennisclip {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 15%;
+    justify-content: center;
+  }
 
-    .p2 {
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row-start: 1;
-        margin-bottom: 30%;
-        display: grid;
-        align-items: flex-end;
-        color: var(--vtYellow);
-        font-weight: bold;
-    }
+  .p2 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    margin-bottom: 30%;
+    display: grid;
+    align-items: flex-end;
+    color: var(--vtYellow);
+    font-weight: bold;
+  }
 
-    .hexagon-1 {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 2;
-    }
+  .hexagon-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+  }
 
-    .yellow2-2,
-    .h3-yellow2-2 {
-        grid-column-start: 3;
-        grid-column-end: 5;
-        grid-row-start: 2;
-    }
+  .yellow2-2,
+  .h3-yellow2-2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+  }
 
-    .yellow2-3,
-    .h3-yellow2-3 {
-        grid-column-start: 5;
-        grid-column-end: 7;
-        grid-row-start: 2;
-    }
+  .yellow2-3,
+  .h3-yellow2-3 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 2;
+  }
 
-    .yellow2-4,
-    .h3-yellow2-4 {
-        grid-column-start: 7;
-        grid-column-end: 9;
-        grid-row-start: 2;
-    }
+  .yellow2-4,
+  .h3-yellow2-4 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 2;
+  }
 
-    .yellow2-5,
-    .h3-yellow2-5 {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 3;
-    }
+  .yellow2-5,
+  .h3-yellow2-5 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+  }
 
-    .yellow2-6,
-    .h3-yellow2-6 {
-        grid-column-start: 6;
-        grid-column-end: 8;
-        grid-row-start: 3;
-    }
-
-    </style>
+  .yellow2-6,
+  .h3-yellow2-6 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 3;
+  }
+</style>
