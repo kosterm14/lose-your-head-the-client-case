@@ -1,3 +1,9 @@
+<script>
+  import Header from "../../lib/components/header.svelte";
+  import Footer from "../../lib/components/footer.svelte";
+</script>
+
+<Header />
 <main>
   <header>
     <div class="hexagon-kennisclip">
@@ -45,6 +51,7 @@
     allowfullscreen
   />
 </main>
+<Footer />
 
 <style>
   .hexagon-kennisclip {
