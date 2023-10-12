@@ -41,6 +41,7 @@
     </div>
   </header>
 
+  <!-- Kennisclip video via YouTube -->
   <iframe
     width="560"
     height="315"
