@@ -41,8 +41,7 @@
   <!-- Kennisclip video via YouTube -->
 
   <div class="iframe">
-
-      <section class="video-arrows">
+    <section class="video-arrows">
       <button class="arrows">
         <img
           class="left-arrow"
@@ -61,7 +60,19 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen
     />
-    
+<div class="beschrijving">
+
+    <h2>Visual thinking in het hbo: onderzoeken en begrijpen </h2>
+    <p>
+      Deze kennisclip gaat over visual thinking en hoe het kan worden toegepast om zowel studenten
+      als docenten in het hbo op een andere manier te leren onderzoeken. Deze
+      kennisclips zijn onderdeel van het platform ‘Visual thinking in het hbo’.
+      Dit platform staat vanaf 2024 online. Tot die tijd kunnen werkvormen
+      opgevraagd worden bij Charley Muhren, docent en onderzoeker bij CMD
+      Amsterdam: c.j.muhren@hva.nl.
+    </p>
+
+</div>
     <section class="video-arrows">
       <button class="arrows">
         <img
@@ -71,7 +82,6 @@
         />
       </button>
     </section>
-
   </div>
 </main>
 <Footer />
@@ -157,9 +167,9 @@
   }
 
   .video-arrows {
-   margin: 1em;
+    margin: 1em;
   }
-  
+
   /* Arrow buttons */
 
   .arrows {
@@ -175,8 +185,13 @@
     transform: rotate(270deg);
   }
 
-   .left-arrow {
+  .left-arrow {
     transform: rotate(90deg);
   }
 
+  .beschrijving{
+    max-width: 500px;
+    margin-left: 1em;
+
+  }
 </style>
