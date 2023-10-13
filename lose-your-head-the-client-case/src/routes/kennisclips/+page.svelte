@@ -4,13 +4,10 @@
 </script>
 
 <Header />
+
 <main>
   <header>
     <div class="hexagon-kennisclip">
-      <section class="hexagon-1">
-        <section class="inside-1" />
-      </section>
-
       <section class="yellow2-2">
         <section class="white2-2" />
       </section>
@@ -42,15 +39,40 @@
   </header>
 
   <!-- Kennisclip video via YouTube -->
-  <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/yr-rRMElLFg?si=CkdyjnxpUFMqM7se"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen
-  />
+
+  <div class="iframe">
+
+      <section class="video-arrows">
+      <button class="arrows">
+        <img
+          class="left-arrow"
+          src="assets/arrows.svg"
+          alt="Knop met pijl naar volgende video"
+        />
+      </button>
+    </section>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/yr-rRMElLFg?si=CkdyjnxpUFMqM7se"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    />
+    
+    <section class="video-arrows">
+      <button class="arrows">
+        <img
+          class="right-arrow"
+          src="assets/arrows.svg"
+          alt="Knop met pijl naar volgende video"
+        />
+      </button>
+    </section>
+
+  </div>
 </main>
 <Footer />
 
@@ -58,26 +80,11 @@
   .hexagon-kennisclip {
     display: grid;
     grid-template-columns: auto;
-    margin-top: 15%;
-    justify-content: center;
+    margin-top: 1em;
+    justify-content: flex-end;
   }
 
-  .p2 {
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    margin-bottom: 30%;
-    display: grid;
-    align-items: flex-end;
-    color: var(--vtYellow);
-    font-weight: bold;
-  }
-
-  .hexagon-1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-  }
+  /* Hexagon grids  */
 
   .yellow2-2,
   .h3-yellow2-2 {
@@ -102,7 +109,7 @@
 
   .yellow2-5,
   .h3-yellow2-5 {
-    grid-column-start: 2;
+    grid-column-start: 6;
     grid-column-end: 4;
     grid-row-start: 3;
   }
@@ -113,4 +120,63 @@
     grid-column-end: 8;
     grid-row-start: 3;
   }
+
+  /* Hexagon shape  */
+
+  .yellow2-1,
+  .yellow2-2,
+  .yellow2-3,
+  .yellow2-4,
+  .yellow2-5,
+  .yellow2-6 {
+    width: 300px;
+    height: 275px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    transform: rotate(90deg);
+  }
+
+  .white2-1,
+  .white2-2,
+  .white2-3,
+  .white2-4,
+  .white2-5,
+  .white2-6 {
+    width: calc(285px);
+    height: calc(261.25px);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+
+  /* Iframe styling */
+
+  .iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+
+  .video-arrows {
+   margin: 1em;
+  }
+  
+  /* Arrow buttons */
+
+  .arrows {
+    width: 72px;
+    height: 66px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    transform: rotate(90deg);
+    border: none;
+    background: var(--vtYellow);
+  }
+
+  .right-arrow {
+    transform: rotate(270deg);
+  }
+
+   .left-arrow {
+    transform: rotate(90deg);
+  }
+
 </style>
