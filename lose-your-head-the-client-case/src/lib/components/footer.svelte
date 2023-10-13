@@ -1,6 +1,6 @@
 <footer>
     <section class="footer-col-logo">
-        <img src="/assets/visual-thinking-logo-footer.svg" />
+        <img src="/assets/visual-thinking-logo-footer.svg" alt='' />
     </section>
 
     <section class="footer-col-1">
@@ -34,16 +34,16 @@
             <li class="footer-bold">Contact</li>
             <li>
                 <span class="footer-social-media">
-                    <img src="/assets/social-media-icons/twitter.svg" />
+                    <img src="/assets/social-media-icons/twitter.svg" alt='' />
                 </span>
                 <span class="footer-social-media">
-                    <img src="/assets/social-media-icons/instagram.svg" />
+                    <img src="/assets/social-media-icons/instagram.svg" alt='' />
                 </span>
                 <span class="footer-social-media">
-                    <img src="/assets/social-media-icons/tiktok.svg" />
+                    <img src="/assets/social-media-icons/tiktok.svg" alt='' />
                 </span>
                 <span class="footer-social-media">
-                    <img src="/assets/social-media-icons/youtube.svg" />
+                    <img src="/assets/social-media-icons/youtube.svg" alt='' />
                 </span>
             </li>
             <li>© Charley Muhren, 2022</li>

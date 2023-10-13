@@ -7,6 +7,5 @@ export const load = async ({ params }) => {
 	const { slug } = params;
 	const queryUrl = getQueryUrl(gql, slug);
 
-	// console.log(queryUrl);
     return await hygraph.request(queryUrl);
 }
