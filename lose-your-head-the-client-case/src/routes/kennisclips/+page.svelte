@@ -60,13 +60,20 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen
     />
+
 <div class="beschrijving">
 
-    <h2>Visual thinking in het hbo: onderzoeken en begrijpen </h2>
+    <h3 class="youtube-video-naam">Visual thinking in het hbo: onderzoeken en begrijpen </h3>
+
     <p>
       Deze kennisclip gaat over visual thinking en hoe het kan worden toegepast om zowel studenten
-      als docenten in het hbo op een andere manier te leren onderzoeken. Deze
-      kennisclips zijn onderdeel van het platform ‘Visual thinking in het hbo’.
+      als docenten in het hbo op een andere manier te leren onderzoeken.
+    </p>
+    
+    <br>
+
+    <p> 
+      Deze kennisclips zijn onderdeel van het platform ‘Visual thinking in het hbo’.
       Dit platform staat vanaf 2024 online. Tot die tijd kunnen werkvormen
       opgevraagd worden bij Charley Muhren, docent en onderzoeker bij CMD
       Amsterdam: c.j.muhren@hva.nl.
@@ -189,9 +196,16 @@
     transform: rotate(90deg);
   }
 
+  /* Iframe text styling */
+
   .beschrijving{
     max-width: 500px;
+    max-height: 409px;
     margin-left: 1em;
-
   }
+
+  .youtube-video-naam{
+    /* margin-bottom: 1em; */
+  }
+ 
 </style>
