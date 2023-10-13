@@ -29,7 +29,6 @@ function filterMethodsByCategory() {
     }
 }
 
-
 </script>
 
 <Header />

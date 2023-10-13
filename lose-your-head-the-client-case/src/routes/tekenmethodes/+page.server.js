@@ -29,5 +29,3 @@ export async function load({url}) {
     return await hygraph.request(query);
 }
 
-
-
