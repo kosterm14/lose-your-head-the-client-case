@@ -6,7 +6,7 @@
 <Header />
 
 <main>
-  <header>
+  <!-- <header>
     <div class="hexagon-kennisclip">
       <section class="yellow2-2">
         <section class="white2-2" />
@@ -36,7 +36,7 @@
 
       <section class="h3-yellow2-6" />
     </div>
-  </header>
+  </header> -->
 
   <!-- Kennisclip video via YouTube -->
 
@@ -61,25 +61,26 @@
       allowfullscreen
     />
 
-<div class="beschrijving">
+    <div class="beschrijving">
+      <h3 class="youtube-video-naam">
+        Visual thinking in het hbo: onderzoeken en begrijpen
+      </h3>
 
-    <h3 class="youtube-video-naam">Visual thinking in het hbo: onderzoeken en begrijpen </h3>
+      <p>
+        Deze kennisclip gaat over visual thinking en hoe het kan worden
+        toegepast om zowel studenten als docenten in het hbo op een andere
+        manier te leren onderzoeken.
+      </p>
 
-    <p>
-      Deze kennisclip gaat over visual thinking en hoe het kan worden toegepast om zowel studenten
-      als docenten in het hbo op een andere manier te leren onderzoeken.
-    </p>
-    
-    <br>
+      <br />
 
-    <p> 
-      Deze kennisclips zijn onderdeel van het platform ‘Visual thinking in het hbo’.
-      Dit platform staat vanaf 2024 online. Tot die tijd kunnen werkvormen
-      opgevraagd worden bij Charley Muhren, docent en onderzoeker bij CMD
-      Amsterdam: c.j.muhren@hva.nl.
-    </p>
-
-</div>
+      <p>
+        Deze kennisclips zijn onderdeel van het platform ‘Visual thinking in het
+        hbo’. Dit platform staat vanaf 2024 online. Tot die tijd kunnen
+        werkvormen opgevraagd worden bij Charley Muhren, docent en onderzoeker
+        bij CMD Amsterdam: c.j.muhren@hva.nl.
+      </p>
+    </div>
     <section class="video-arrows">
       <button class="arrows">
         <img
@@ -198,14 +199,13 @@
 
   /* Iframe text styling */
 
-  .beschrijving{
+  .beschrijving {
     max-width: 500px;
     max-height: 409px;
     margin-left: 1em;
   }
 
-  .youtube-video-naam{
+  .youtube-video-naam {
     /* margin-bottom: 1em; */
   }
- 
 </style>
