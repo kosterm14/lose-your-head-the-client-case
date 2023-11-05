@@ -1,5 +1,7 @@
 
 # Visual Thinking
+<img src='https://github.com/kosterm14/lose-your-head-the-client-case/assets/112856683/a3441cca-d232-41e6-975f-f6ce1dad4401' width=30%>
+
 
 ## 📚 Inhoudsopgave
 
